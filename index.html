@@ -1,119 +1,340 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Nidhi Shetty Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nidhi Shetty | Portfolio</title>
+
 <style>
-body{
-font-family:Segoe UI,sans-serif;
-margin:0;
-background:#F8FAFC;
-color:#111827;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#F8FAFC;
+    color:#111827;
+    line-height:1.6;
+}
+
+/* HERO SECTION */
 
 header{
-background:#1E40AF;
-color:white;
-padding:60px 20px;
-text-align:center;
+    background:linear-gradient(135deg,#1E40AF,#2563EB);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
-section{
-padding:50px;
-max-width:1000px;
-margin:auto;
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
-margin-bottom:20px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+header h2{
+    color:white;
+    font-weight:500;
+    margin-bottom:10px;
 }
+
+header p{
+    max-width:700px;
+    margin:auto;
+    opacity:0.95;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+/* BUTTONS */
 
 .btn{
-display:inline-block;
-padding:12px 20px;
-background:#F97316;
-color:white;
-text-decoration:none;
-border-radius:10px;
-margin-top:10px;
+    display:inline-block;
+    padding:12px 24px;
+    margin:8px;
+    background:#F97316;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
 }
 
-h2{
-color:#1E40AF;
+.btn:hover{
+    transform:translateY(-3px);
 }
+
+/* SECTIONS */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#1E40AF;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* CARDS */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* SKILLS */
+
+.skills{
+    text-align:center;
+}
+
+.skill{
+    display:inline-block;
+    background:#DBEAFE;
+    color:#1E40AF;
+    padding:10px 16px;
+    margin:6px;
+    border-radius:25px;
+    font-weight:600;
+}
+
+/* PROJECTS */
+
+.project-title{
+    color:#1E40AF;
+    margin-bottom:10px;
+}
+
+.project-buttons{
+    margin-top:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:36px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <h1>Nidhi Shetty</h1>
-<p>Aspiring Full Stack Developer & UI/UX Designer</p>
+
+<h2>B.Sc. Information Technology Student</h2>
+
+<p>
+Passionate about Web Development, UI/UX Design, and Software Development.
+Continuously learning new technologies and building projects that solve real-world problems.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="https://drive.google.com/file/d/10OnOYKFhGQC6-WVnrdfLCM5Vb7ZpKSu_/view?usp=drive_link"
+class="btn"
+target="_blank">
+Download Resume
+</a>
+
+</div>
+
 </header>
+
+<!-- ABOUT -->
 
 <section>
 
-<h2>About Me</h2>
+<h2 class="section-title">About Me</h2>
 
 <div class="card">
+
 <p>
-Detail-oriented and technology-driven IT student with knowledge of web development, programming, and database management. Passionate about creating user-friendly digital experiences with a growing interest in UI/UX design. Skilled in developing responsive web applications, managing databases, and solving technical problems. Strong communication, teamwork, adaptability, and continuous learning abilities, eager to contribute in dynamic work environments.
-</p>
-</div>
-
-<h2>Skills</h2>
-
-<div class="card">
-HTML • CSS • JavaScript • ASP.NET • C# • SQL Server • Figma • GitHub • Basic UI/UX desgin
-</div>
-
-<h2>Projects</h2>
-
-<div class="card">
-<h3>Bittu Cafe</h3>
-<p>
-Online Food Ordering System developed using ASP.NET and SQL Server.
+I am a B.Sc. Information Technology student with a strong interest in software development and UI/UX design. Through academic and personal projects, I have gained hands-on experience in ASP.NET, C#, SQL Server, HTML, CSS, JavaScript, and Figma. I enjoy creating user-friendly applications and continuously improving my technical and design skills.
 </p>
 
-<a class="btn"
-href="https://github.com/NidhiShetty0362/bittu-cafe-food-ordering-system">
-View Project
-</a>
-</div>
-
-<div class="card">
-<h3>Voyexa</h3>
-<p>
-AI-Powered Travel Super App UI/UX Case Study designed in Figma.
-</p>
-
-<a class="btn"
-href="https://github.com/NidhiShetty0362/voyexa-uiux-case-study">
-View Project
-</a>
-</div>
-
-<h2>Resume</h2>
-
-<div class="card">
-<a class="btn"
-href="https://drive.google.com/file/d/10OnOYKFhGQC6-WVnrdfLCM5Vb7ZpKSu_/view?usp=drive_link">
-Download Resume
-</a>
-</div>
-
-<h2>Contact</h2>
-
-<div class="card">
-Email: nidhishettyguna62@gmail.com
-<br><br>
-GitHub: github.com/NidhiShetty0362
 </div>
 
 </section>
+
+<!-- SKILLS -->
+
+<section>
+
+<h2 class="section-title">Skills</h2>
+
+<div class="card skills">
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">ASP.NET</span>
+<span class="skill">C#</span>
+<span class="skill">SQL Server</span>
+<span class="skill">Figma</span>
+<span class="skill">GitHub</span>
+<span class="skill">UI/UX Design</span>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="card">
+
+<h3 class="project-title">🍽️ Bittu Cafe – Online Food Ordering System</h3>
+
+<p>
+Developed a web-based food ordering platform using ASP.NET and SQL Server. The application includes user authentication, menu browsing, cart management, online ordering, payment processing, and order tracking functionalities.
+</p>
+
+<div class="project-buttons">
+
+<a class="btn"
+href="https://github.com/NidhiShetty0362/bittu-cafe-food-ordering-system"
+target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3 class="project-title">✈️ Voyexa – AI-Powered Travel Super App</h3>
+
+<p>
+Designed a complete UI/UX case study in Figma featuring onboarding, destination discovery, trip management, AI itinerary planning, and profile management. Developed a design system and interactive prototype to showcase the complete user experience.
+</p>
+
+<div class="project-buttons">
+
+<a class="btn"
+href="https://github.com/NidhiShetty0362/voyexa-uiux-case-study"
+target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RESUME -->
+
+<section>
+
+<h2 class="section-title">Resume</h2>
+
+<div class="card" style="text-align:center;">
+
+<p>
+Click below to view or download my latest resume.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://drive.google.com/file/d/10OnOYKFhGQC6-WVnrdfLCM5Vb7ZpKSu_/view?usp=drive_link"
+target="_blank">
+📄 Download Resume
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section>
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card contact">
+
+<p>
+📧 Email: nidhishettyguna62@gmail.com
+</p>
+
+<br>
+
+<a class="btn"
+href="mailto:nidhishettyguna62@gmail.com">
+Email Me
+</a>
+
+<a class="btn"
+href="https://github.com/NidhiShetty0362"
+target="_blank">
+GitHub
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Nidhi Shetty | Portfolio
+
+</footer>
 
 </body>
 </html>
