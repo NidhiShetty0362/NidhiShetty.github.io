@@ -349,15 +349,27 @@ flex-wrap:wrap;
 
 .btn{
 
-padding:15px 30px;
+display:inline-flex;
 
-border-radius:50px;
+justify-content:center;
 
-text-decoration:none;
+align-items:center;
+
+gap:8px;
+
+padding:14px 28px;
+
+border-radius:12px;
+
+font-size:16px;
 
 font-weight:600;
 
+text-decoration:none;
+
 transition:.3s;
+
+min-width:210px;
 
 }
 
@@ -1474,13 +1486,13 @@ text-align:center;
 
 /* ================= CONTACT ================= */
 
-.contact-grid{
+.contact-grid p{
 
-display:grid;
+white-space:nowrap;
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+font-size:15px;
 
-gap:25px;
+margin-top:10px;
 
 }
 
@@ -1516,11 +1528,25 @@ background:#020617;
 
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 .contact-grid{
 
 grid-template-columns:1fr;
+
+}
+
+.contact-grid p{
+
+white-space:normal;
+
+}
+
+.btn{
+
+width:100%;
+
+max-width:260px;
 
 }
 
@@ -1727,13 +1753,19 @@ behavior:"smooth"
 
 position:fixed;
 
-right:30px;
+right:25px;
 
-bottom:30px;
+bottom:25px;
 
-width:55px;
+width:60px;
 
-height:55px;
+height:60px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
 
 border:none;
 
@@ -1747,17 +1779,17 @@ font-size:22px;
 
 cursor:pointer;
 
-display:none;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
 
-justify-content:center;
-
-align-items:center;
-
-box-shadow:0 10px 30px rgba(0,0,0,.25);
+z-index:9999;
 
 transition:.3s;
 
-z-index:999;
+}
+
+#topBtn i{
+
+line-height:1;
 
 }
 
