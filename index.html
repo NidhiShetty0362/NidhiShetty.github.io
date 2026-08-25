@@ -1140,7 +1140,6 @@ nav ul li a.active{
     </div>
 
 </section>
-```html
 <!-- =====================================================
      ABOUT SECTION
 ===================================================== -->
@@ -2006,7 +2005,6 @@ body.dark .project .icon{
     </div>
 
 </section>
-```html
 <!-- =====================================================
      EDUCATION SECTION
 ===================================================== -->
@@ -2310,8 +2308,6 @@ body.dark .timeline-year{
 
 </style>
 
-
-```html
 <!-- ================= CERTIFICATION ================= -->
 
 <section id="certificate">
@@ -2426,6 +2422,7 @@ body.dark .timeline-year{
 
 </style>
 
+```html
 <!-- =====================================================
      RESUME SECTION
 ===================================================== -->
@@ -2434,37 +2431,25 @@ body.dark .timeline-year{
 
     <h2 class="title">Resume</h2>
 
-
     <div class="resume-wrapper">
 
         <div class="card resume">
 
-
             <div class="resume-icon">
-
-                <i class="fas fa-file-user"></i>
-
+                <i class="fas fa-file-alt"></i>
             </div>
-
 
             <h3>
                 Download My Resume
             </h3>
 
-
             <p>
-
-                Interested in learning more about my
-                education, technical skills, projects,
-                and experience?
-
+                Interested in learning more about my education,
+                technical skills, projects, and experience?
                 View my latest resume below.
-
             </p>
 
-
-            <div class="buttons resume-buttons">
-
+            <div class="resume-buttons">
 
                 <a
                     class="btn primary"
@@ -2475,19 +2460,6 @@ body.dark .timeline-year{
                     <i class="fas fa-eye"></i>
 
                     View Resume
-
-                </a>
-
-
-                <a
-                    class="btn secondary"
-                    href="https://drive.google.com/file/d/1HDVD9jHnlv66zxXziw7CxpvDSpwFhf7L/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener">
-
-                    <i class="fas fa-download"></i>
-
-                    Download Resume
 
                 </a>
 
@@ -2508,9 +2480,9 @@ body.dark .timeline-year{
 
 .resume-wrapper{
 
-    max-width:800px;
+    max-width:700px;
 
-    margin:auto;
+    margin:0 auto;
 
 }
 
@@ -2519,14 +2491,18 @@ body.dark .timeline-year{
 
     text-align:center;
 
+    padding:35px 30px;
+
 }
 
 
+/* RESUME ICON */
+
 .resume-icon{
 
-    width:80px;
+    width:75px;
 
-    height:80px;
+    height:75px;
 
     display:flex;
 
@@ -2536,13 +2512,13 @@ body.dark .timeline-year{
 
     margin:0 auto 20px;
 
-    border-radius:20px;
+    border-radius:18px;
 
     background:#DBEAFE;
 
-    color:var(--primary);
+    color:#2563EB;
 
-    font-size:35px;
+    font-size:34px;
 
 }
 
@@ -2551,14 +2527,16 @@ body.dark .resume-icon{
 
     background:#334155;
 
+    color:#60A5FA;
+
 }
 
 
 .resume h3{
 
-    font-size:25px;
+    font-size:24px;
 
-    margin-bottom:15px;
+    margin-bottom:12px;
 
 }
 
@@ -2567,36 +2545,56 @@ body.dark .resume-icon{
 
     color:var(--text2);
 
-    line-height:1.8;
+    line-height:1.7;
+
+    font-size:15px;
 
     max-width:600px;
 
-    margin:auto;
+    margin:0 auto 25px;
 
 }
 
 
 .resume-buttons{
 
+    display:flex;
+
     justify-content:center;
+
+}
+
+
+.resume-buttons .btn{
+
+    min-width:190px;
 
 }
 
 
 @media(max-width:600px){
 
-    .resume-buttons{
+    .resume{
 
-        flex-direction:column;
+        padding:30px 20px;
 
-        align-items:center;
+    }
+
+    .resume h3{
+
+        font-size:21px;
+
+    }
+
+    .resume p{
+
+        font-size:14px;
 
     }
 
 }
 
 </style>
-
 
 <!-- =====================================================
      CONTACT SECTION
@@ -2871,7 +2869,6 @@ body.dark .contact-icon{
 }
 
 </style>
-```html
 <!-- =====================================================
      FOOTER
 ===================================================== -->
